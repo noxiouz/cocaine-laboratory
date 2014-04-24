@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 from cocaine.worker import Worker
 from cocaine.decorators.wsgi import wsgi
 

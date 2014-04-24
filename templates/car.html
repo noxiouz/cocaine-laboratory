@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="../static/css/bootstrap.css" rel="stylesheet">
+    <link href="../static/css/bootstrap-fileupload.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
+
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/bootstrap-fileupload.js"></script>
+    <script src="../static/js/script.js"></script>
+</head>
+
+<body>
+    <ul class="thumbnails">
+    	{% for photo in photos %}
+        <li class="span4">
+            <a href="#" class="thumbnail" id="{{photo}}">
+                <img src="/gettempimage/{{photo}}" alt="">
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
