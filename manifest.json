@@ -1,0 +1,3 @@
+{
+    "slave": "/usr/bin/cocaine-lab/worker.py"
+}
