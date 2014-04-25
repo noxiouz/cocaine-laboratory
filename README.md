@@ -3,7 +3,7 @@
 ## Create application and Deploy
 
 1. git clone https://github.yandex-team.ru/noxiouz/cocaine-lab.git
-2. cocaine-tool profile upload --name cocaine-lab-profile --profile profile.json --host cocsfe01.demo.yandex.net
+2. cocaine-tool profile upload --name cocaine-lab-profile --profile profile.json --host cocsfe01.demo.yandex.net --timeout=10
 3. cocaine-tool app upload --docker=http://cocsfe01.demo.yandex.net:5432 --registry=cocsfe01.demo.yandex.net:5000 --manifest manifest.json --name cocaine-lab --timeout 20000 --host cocsfe01.demo.yandex.net
 4. cocaine-tool app restart --name cocaine-lab --profile cocaine-lab-profile --host cocsbe01.demo.yandex.net --timeout=200
 5. cocaine-tool app restart --name cocaine-lab --profile cocaine-lab-profile --host cocsbe02.demo.yandex.net --timeout=200
