@@ -1,16 +1,16 @@
 {
-    "queue-limit": 1000,
-    "pool-limit": 10,
     "isolate": {
         "args": {
             "memory_limit": 1000000000,
-            "endpoint": "tcp://0.0.0.0:5452",
-            "registry": "registry.tst.ape.yandex.net:5000",
+            "endpoint": "unix:///var/run/docker.sock",
+            "registry": "cocsfe01.demo.yandex.net:5000",
             "memory_swap": 1000000010,
             "cpu_shares": 0
         },
         "type": "docker"
     },
+    "queue-limit": 1000,
+    "pool-limit": 10,
     "log-output": true,
     "concurrency": 10
 }
