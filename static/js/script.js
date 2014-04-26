@@ -36,7 +36,6 @@ jQuery(document).ready(function() {
     });
 
     $('#uploadDialog .btn-primary').click(function() {
-        console.log("govno", $('#superForm'));
         var formData = new FormData($('#superForm')[0]);
         $('body').append(formData);
         console.log(formData);
