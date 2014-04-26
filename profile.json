@@ -9,8 +9,9 @@
         },
         "type": "docker"
     },
-    "queue-limit": 1000,
-    "pool-limit": 10,
+    "queue-limit": 20,
+    "pool-limit": 20,
     "log-output": true,
-    "concurrency": 10
+    "grow-threshold": 1,
+    "concurrency": 1
 }
